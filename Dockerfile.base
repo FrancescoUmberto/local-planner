@@ -1,0 +1,16 @@
+FROM ros:humble
+
+# Install dependencies
+
+RUN apt-get update && apt-get upgrade -y
+
+RUN apt install net-tools -y
+RUN apt install iputils-ping -y
+
+
+RUN apt-get install -y python3-pip
+RUN pip install setuptools==58.2.0
+RUN apt-get install ros-humble-turtlesim -y
+
+
+RUN echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc
