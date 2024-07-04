@@ -1,0 +1,58 @@
+[0.010s] Invoking command in '/home/local-planner/ros2_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/local-planner/ros2_ws/install/py_pubsub:/opt/ros/humble /usr/bin/cmake /home/local-planner/ros2_ws/src/tutorial_interfaces -DCMAKE_INSTALL_PREFIX=/home/local-planner/ros2_ws/install/tutorial_interfaces
+[0.025s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.150s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.216s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.242s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.245s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.252s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.264s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.280s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.414s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.550s] [31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+[0.550s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[0.550s]   tutorial_interfaces --arguments-file
+[0.550s]   /home/local-planner/ros2_ws/build/tutorial_interfaces/rosidl_adapter__arguments__tutorial_interfaces.json
+[0.550s]   --output-dir
+[0.550s]   /home/local-planner/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces
+[0.550s]   --output-file
+[0.550s]   /home/local-planner/ros2_ws/build/tutorial_interfaces/rosidl_adapter/tutorial_interfaces.idls)
+[0.550s]   returned error code 1:
+[0.550s] 
+[0.551s]   Error processing 'int 64 a' of 'tutorial_interfaces/AddThreeInts_Request':
+[0.551s]   ''int' is an invalid message name.  It should have the pattern
+[0.551s]   '^[A-Z][A-Za-z0-9]*$''
+[0.551s] 
+[0.551s]   Traceback (most recent call last):
+[0.551s] 
+[0.551s]     File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+[0.551s]       return _run_code(code, main_globals, None,
+[0.551s]     File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+[0.551s]       exec(code, run_globals)
+[0.551s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.551s]       sys.exit(main())
+[0.551s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main
+[0.551s]       abs_idl_file = convert_to_idl(
+[0.551s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 24, in convert_to_idl
+[0.551s]       return convert_srv_to_idl(
+[0.551s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/srv/__init__.py", line 28, in convert_srv_to_idl
+[0.551s]       srv = parse_service_string(package_name, input_file.stem, content)
+[0.551s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 859, in parse_service_string
+[0.551s]       request_message = parse_message_string(
+[0.552s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 520, in parse_message_string
+[0.552s]       Type(type_string, context_package_name=pkg_name),
+[0.552s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 277, in __init__
+[0.552s]       super(Type, self).__init__(
+[0.552s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/parser.py", line 205, in __init__
+[0.552s]       raise InvalidResourceName(
+[0.552s] 
+[0.552s]   rosidl_adapter.parser.InvalidResourceName: 'int' is an invalid message
+[0.552s]   name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[0.552s] 
+[0.552s] Call Stack (most recent call first):
+[0.552s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[0.552s]   CMakeLists.txt:29 (rosidl_generate_interfaces)
+[0.552s] 
+[0.552s] [0m
+[0.552s] -- Configuring incomplete, errors occurred!
+[0.552s] See also "/home/local-planner/ros2_ws/build/tutorial_interfaces/CMakeFiles/CMakeOutput.log".
+[0.556s] Invoked command in '/home/local-planner/ros2_ws/build/tutorial_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/local-planner/ros2_ws/install/py_pubsub:/opt/ros/humble /usr/bin/cmake /home/local-planner/ros2_ws/src/tutorial_interfaces -DCMAKE_INSTALL_PREFIX=/home/local-planner/ros2_ws/install/tutorial_interfaces

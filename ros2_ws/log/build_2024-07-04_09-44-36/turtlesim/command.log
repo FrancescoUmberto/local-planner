@@ -1,0 +1,4 @@
+Invoking command in '/home/local-planner/ros2_ws/build/turtlesim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/local-planner/ros2_ws/build/turtlesim -- -j32 -l32
+Invoked command in '/home/local-planner/ros2_ws/build/turtlesim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/local-planner/ros2_ws/build/turtlesim -- -j32 -l32
+Invoking command in '/home/local-planner/ros2_ws/build/turtlesim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/local-planner/ros2_ws/build/turtlesim
+Invoked command in '/home/local-planner/ros2_ws/build/turtlesim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/local-planner/ros2_ws/build/turtlesim

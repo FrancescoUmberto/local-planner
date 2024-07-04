@@ -1,0 +1,5 @@
+int 64 a 
+int 64 b 
+int 64 c
+---
+int64 sum
